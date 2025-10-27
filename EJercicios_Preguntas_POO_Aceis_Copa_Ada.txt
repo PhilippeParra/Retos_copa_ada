@@ -1,0 +1,131 @@
+Contexto: a medida que aumenta el numeral aumenta la dificultad.
+
+1.	Crea una clase base llamada Animal con un atributo nombre y un método hablar() que imprima “Sonido desconocido”.
+Luego crea las clases hijas Perro y Gato que sobrescriban el método hablar() para mostrar “Guau” y “Miau” respectivamente.
+Crea un objeto de cada clase y llama a sus métodos.
+Objetivo: Comprender cómo funciona la herencia y la sobreescritura de métodos.
+
+2.	Crea una clase base Vehiculo con atributos marca y modelo, y un método mostrar_info().
+Crea la clase Auto que herede de Vehiculo y agregue el atributo puertas.
+Haz que mostrar_info() muestre también la cantidad de puertas.
+Objetivo: Aprender a usar super() (o el constructor base en C++/Java) para reutilizar inicialización.
+
+3.	Define una clase abstracta Figura con un método abstracto area().
+Crea las subclases Cuadrado y Circulo que implementen area() según su fórmula matemática.
+Crea una lista con varias figuras y muestra sus áreas.
+Objetivo: Aplicar la abstracción y la implementación concreta de métodos abstractos.
+
+4.	Crea una clase base Empleado con un método calcular_salario().
+Crea dos clases hijas:
+•	“EmpleadoTiempoCompleto” con salario fijo mensual.
+•	“EmpleadoPorHoras” con pago por hora trabajada.
+
+Crea una lista de empleados (mezclando ambos tipos) y calcula el salario total de la empresa usando polimorfismo.
+
+Objetivo: Ver cómo diferentes clases pueden responder de forma distinta al mismo método.
+
+5.	Crea una clase Nadador con un método moverse() que diga “Nada en el agua”.
+Crea una clase Caminante con un método moverse() que diga “Camina en tierra”.
+Luego crea una clase Anfibio que herede de ambas y muestre el comportamiento correcto dependiendo del contexto.
+Objetivo: Entender la herencia múltiple y cómo Python (o C++) resuelve los métodos duplicados.
+
+6.	Diseña un sistema de gestión de una biblioteca:
+•	Clase abstracta Material con atributos titulo, autor, anio y un método abstracto mostrar_info().
+•	Subclases: Libro, Revista, DVD, cada una con atributos adicionales (por ejemplo, número de páginas o duración).
+•	Crea una clase Biblioteca que almacene una lista de materiales y tenga métodos para:
+•	Agregar material
+•	Listar todo el contenido
+•	Buscar por título
+Objetivo: Integrar los tres pilares en un caso práctico.
+
+ejercicios tipo abc 
+
+1. ¿Qué es la herencia en programación orientada a objetos?
+
+A) La capacidad de crear varias copias idénticas de una clase.
+B) La posibilidad de que una clase obtenga atributos y métodos de otra.
+C) El proceso de convertir datos en objetos.
+
+Respuesta: B
+La herencia permite que una clase “hija” reutilice código de una clase “padre” sin volver a escribirlo.
+
+2. En POO, una “clase padre” también se conoce como:
+
+A) Clase derivada
+B) Clase base
+C) Clase secundaria
+
+Respuesta: B
+La clase base (o superclase) es aquella de la cual heredan otras clases.
+
+3. ¿Cuál de las siguientes opciones muestra un ejemplo de polimorfismo?
+
+A) Dos métodos con el mismo nombre pero distinto comportamiento.
+B) Dos clases sin relación que comparten atributos.
+C) Una clase que no tiene objetos.
+
+Respuesta: A
+Polimorfismo significa “muchas formas”: distintos objetos responden de manera diferente al mismo método.
+
+4. ¿Qué palabra clave se usa en muchas lenguas (como Java o Python) para indicar herencia?
+
+A) inherits
+B) extends
+C) connects
+
+Respuesta: B
+En Java y C++, la palabra clave extends indica que una clase hereda de otra. En Python se indica con paréntesis (class Hija(Padre):).
+
+5. Una clase abstracta se caracteriza porque:
+
+A) Puede instanciarse directamente.
+B) No puede tener métodos.
+C) No puede ser instanciada y puede tener métodos abstractos.
+
+Respuesta: C
+Las clases abstractas sirven de modelo; no se pueden usar directamente, solo a través de clases hijas que implementen sus métodos.
+
+6. Si una subclase redefine un método de la clase padre, se dice que hay:
+
+A) Herencia múltiple
+B) Sobrescritura de método
+C) Sobrecarga de operador
+
+Respuesta: B
+La sobrescritura (override) ocurre cuando la subclase redefine un método existente del padre para darle su propio comportamiento.
+
+7. ¿Qué sucede si una subclase no implementa un método abstracto de su clase base?
+
+A) El programa no compila o lanza error.
+B) El método se ignora.
+C) Se ejecuta el método del padre.
+
+Respuesta: A
+Si una clase hereda de una clase abstracta pero no implementa sus métodos, también debe declararse abstracta o habrá error.
+
+8. ¿Cuál es el principal beneficio del polimorfismo?
+
+A) Acelera la ejecución del programa.
+B) Permite que diferentes clases usen el mismo método con comportamientos distintos.
+C) Evita el uso de herencia.
+
+Respuesta: B
+El polimorfismo simplifica el código al permitir tratar objetos distintos de forma uniforme, aunque actúen diferente.
+
+9. En una jerarquía de clases, si Perro hereda de Animal, y Animal tiene el método hablar(), ¿qué pasa si Perro no lo redefine?
+
+A) Perro no podrá usar hablar().
+B) Perro usará el método hablar() de Animal.
+C) El programa lanza error de compilación.
+
+Respuesta: B
+Si la subclase no redefine un método, hereda automáticamente el de la clase base.
+
+10. ¿Cuál de los siguientes ejemplos combina abstracción, herencia y polimorfismo?
+
+A) Una clase Figura abstracta con método area(), y clases hijas Cuadrado y Círculo que implementan su propia fórmula.
+B) Una clase con solo variables globales.
+C) Una clase que imprime un mensaje en consola.
+
+Respuesta: A
+Figura representa la abstracción, las clases hijas muestran la herencia, y el método area() se comporta diferente según el tipo de figura (polimorfismo).
